@@ -4,7 +4,7 @@ Reproducible epidemiological analysis of factors associated with altered psychom
 
 ## Scope
 
-This repository intentionally contains **only the epidemiological analysis**. Exploratory machine-learning experiments were removed from the cleaned notebook.
+This repository intentionally contains **only the epidemiological analysis**.
 
 Primary outcome:
 - `Normal` = 0
@@ -23,21 +23,9 @@ Main analyses:
 - `DSM_epidemiological_study_publication.ipynb` — main analysis notebook.
 - `requirements.txt` — Python dependencies.
 
-The source Excel dataset is **not included** in the repository.
+The source Excel dataset is **not included** in the repository due ethicals concerns.
 
 ## Default data path
-
-The notebook preserves the original Google Drive project structure:
-
-```text
-/content/drive/MyDrive/Machine_Learning_UCT/psicomotor/control_sano_2019_2022.xlsx
-```
-
-The publication outputs are written by default to:
-
-```text
-/content/drive/MyDrive/Machine_Learning_UCT/psicomotor/final_estudiantes/epidemiology_publication/
-```
 
 For local execution, override paths with environment variables:
 
@@ -46,23 +34,6 @@ export DSM_PROJECT_DIR=/path/to/project
 export DSM_DATA_PATH=/path/to/control_sano_2019_2022.xlsx
 export DSM_OUTPUT_DIR=/path/to/output
 ```
-
-## Outputs
-
-Tables are exported as both CSV and XLSX. Figures are exported as PNG and TIFF at **300 dpi**.
-
-Main publication outputs include:
-
-- Table 1: cohort characteristics by DSM status.
-- Table 2: adjusted odds ratios from the core model.
-- Table 3: altered DSM prevalence by recorded vulnerability.
-- Table 4: adjusted vulnerability association overall and by year.
-- Table 5: vulnerability × year interaction.
-- Figure 1: core adjusted-OR forest plot.
-- Figure 2: altered DSM prevalence by vulnerability.
-- Figure 3: adjusted vulnerability-OR forest plot.
-
-Supplementary outputs include the cohort flow, missingness audit, global Wald tests, vulnerability missing-status sensitivity analysis, model summaries, software versions, and a JSON analysis manifest.
 
 ## Reproducibility
 
